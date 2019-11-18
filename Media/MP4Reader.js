@@ -1,13 +1,11 @@
+import "../Base/Array.js";
+import { BinaryReader } from "../Base/BinaryReader.js";
+import { BinaryWriter } from "../Base/BinaryWriter.js";
+import { Util } from "../Base/Util.js";
 import { AVC } from "./AVC.js";
 import { MPEG4 } from "./MPEG4.js";
 import { Media, AudioPacket, VideoPacket } from "./Media.js";
-//import { HEVC } from "./HEVC.js";
-//#include "Mona/WriterReader.h"
-import "./Array.js";
 import { MediaReader } from "./MediaReader.js";
-import { BinaryReader } from "./BinaryReader.js";
-import { BinaryWriter } from "./BinaryWriter.js";
-import { Util } from "./Util.js";
 
 let _MacLangs = [
 	"eng",

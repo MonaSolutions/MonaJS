@@ -1,5 +1,5 @@
 import { Util } from '../Base/Util.js';
-import { Media } from '../Base/Media.js';
+import { Media } from './Media.js';
 
 export class WSSource {
 	onAudio(tag, data) {}

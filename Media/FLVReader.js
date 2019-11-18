@@ -1,10 +1,10 @@
-import { BinaryWriter } from "./BinaryWriter.js";
-import { BinaryReader } from "./BinaryReader.js";
+import "../Base/Array.js";
+import { BinaryWriter } from "../Base/BinaryWriter.js";
+import { BinaryReader } from "../Base/BinaryReader.js";
 import { MediaReader } from "./MediaReader.js";
 import { Media } from "./Media.js";
 import { MPEG4 } from "./MPEG4.js";
 import { AVC } from "./AVC.js";
-import "./Array.js";
 
 let AMF = {
 	Type: {

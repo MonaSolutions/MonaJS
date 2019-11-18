@@ -1,9 +1,9 @@
 //#include "Mona/HEVC.h"
 //import { AVC } from "./AVC.js";
+import { BinaryReader } from "../Base/BinaryReader.js";
+import { BinaryWriter } from "../Base/BinaryWriter.js";
 import { Media } from "./Media.js";
 import { MediaTrackReader } from "./MediaReader.js";
-import { BinaryReader } from "./BinaryReader.js";
-import { BinaryWriter } from "./BinaryWriter.js";
 
 export class NALNetReader extends MediaTrackReader {
 	constructor(videoType) {

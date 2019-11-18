@@ -1,7 +1,8 @@
-import { MP4Writer } from "../Base/MP4Writer.js";
-import { Media } from "../Base/Media.js";
 import { ByteRate } from "../Base/ByteRate.js";
 import { Util } from "../Base/Util.js";
+import { MP4Writer } from "./MP4Writer.js";
+import { Media } from "./Media.js";
+
 
 // Firefox needs 2 sec of bufferization to avoid artefact on audio rendering
 const DEFAULT_BUFFER_TIME_MS = navigator.userAgent.toLowerCase().indexOf('firefox') > -1 ? 2000 : 1000;

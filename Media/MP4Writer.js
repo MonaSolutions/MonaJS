@@ -1,8 +1,10 @@
+import "../Base/Array.js"
+import { Util } from "../Base/Util.js"
+import { BinaryWriter } from "../Base/BinaryWriter.js";
 import { Media } from "./Media.js";
-import { BinaryWriter } from "./BinaryWriter.js";
 import { AVC } from "./AVC.js";
-import { Util } from "./Util.js"
-import "./Array.js"
+
+
 
 class Frame {
 	constructor(tag, data) {

@@ -1,7 +1,7 @@
-import { BinaryReader } from "./BinaryReader.js";
-import { BinaryWriter } from "./BinaryWriter.js";
+import { BinaryReader } from "../Base/BinaryReader.js";
+import { BinaryWriter } from "../Base/BinaryWriter.js";
+import { BitReader } from "../Base/BitReader.js";
 import { Media } from "./Media.js";
-import { BitReader } from "./BitReader.js";
 import { MPEG4 } from "./MPEG4.js";
 
 export let AVC = {

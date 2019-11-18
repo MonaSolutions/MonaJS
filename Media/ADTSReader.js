@@ -1,4 +1,4 @@
-import { BinaryReader } from "./BinaryReader.js";
+import { BinaryReader } from "../Base/BinaryReader.js";
 import { Media } from "./Media.js";
 import { MediaTrackReader } from "./MediaReader.js";
 import { MPEG4 } from "./MPEG4.js";
