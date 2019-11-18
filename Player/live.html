@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+<style>
+body 
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+	margin: 0px;
+	background-color: white;
+}
+video 
+{
+    width: 100%;
+    height: 100%;
+}
+#video_overlays {
+	position:absolute;
+	float:left;
+    width:200px;
+   	height:20px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.6);
+    z-index:100;
+}
+</style>
+</head>
+
+<body>
+	<!-- ES6 & module support test -->
+	<script src="../Base/CheckSupport.js"></script>
+	
+	<script type="module">
+		import { Timer } from '../Base/Timer.js';
+		import { Player } from "./Player.js";
+		import { WSSource } from "./WSSource.js";
+
+		window.onload = load;
+
+		function load() {
+			var video = document.getElementById("video");
+
+			let url = (location.protocol == "https:" ?  "wss://" : "ws://") + location.host + location.pathname + location.search;
+			var player = new Player(video, new WSSource(url));
+			player.onBegin = function() {
+				console.log("begin");
+			}
+			player.onProperties = function(properties) {
+				console.log("properties:", JSON.stringify(properties, null, 4));
+			}
+			player.onEnd = function() {
+				console.log("end");
+			}
+			player.onClose = function(error) {
+				displayError(error || "Player closed, refresh page");
+				if(error)
+					console.error(error);
+			}
+			Timer.Set(() => document.getElementById("stream").textContent = Math.round(player.byteRate / 125), 1000);
+		}
+		
+	</script>
+
+	<div id="video_overlays">
+		<div>Stream bitrate : <span id="stream"></span>kb/s</div>
+	</div>
+	<video id="video" autoplay="true" controls="true" muted> <!-- muted to start the video automatically (new browser politic) -->
+	Your browser does not support the video tag.
+	</video>
+
+</body>
+</html>
