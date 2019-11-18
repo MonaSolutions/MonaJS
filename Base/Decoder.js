@@ -1,3 +1,14 @@
+/* 
+This file is a part of MonaSolutions Copyright 2019
+mathieu.poux[a]gmail.com
+jammetthomas[a]gmail.com
+
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+
+*/
+
 import { Media } from './Media.js';
 import { Timer } from './Timer.js';
 import { Util } from './Util.js';

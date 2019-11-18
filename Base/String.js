@@ -1,3 +1,13 @@
+/* 
+This file is a part of MonaSolutions Copyright 2019
+mathieu.poux[a]gmail.com
+jammetthomas[a]gmail.com
+
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+
+*/
 
 String.ReplaceAt = function(string, index, char) {
 	return string.substring(0, index) + char + string.substring(index + 1);

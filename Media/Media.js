@@ -1,3 +1,13 @@
+/* 
+This file is a part of MonaSolutions Copyright 2019
+mathieu.poux[a]gmail.com
+jammetthomas[a]gmail.com
+
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+
+*/
 import { Util } from "../Base/Util.js";
 
 let _Rates = [ 0, 5512, 7350, 8000, 11025, 12000, 16000, 18900, 22050, 24000, 32000, 37800, 44056, 44100, 47250, 48000, 50000, 50400, 64000, 88200, 96000, 176400, 192000, 352800, 2822400, 5644800, 0, 0, 0, 0, 0, 0 ];

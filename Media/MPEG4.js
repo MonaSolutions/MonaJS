@@ -1,6 +1,15 @@
+/* 
+This file is a part of MonaSolutions Copyright 2019
+mathieu.poux[a]gmail.com
+jammetthomas[a]gmail.com
+
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+
+*/
+
 // https://www.html5rocks.com/en/tutorials/webgl/typed_arrays/
-
-
 // 1024000.0/ [ 96000, 88200, 64000, 48000, 44100, 32000, 24000, 22050, 16000, 12000, 11025, 8000, 7350 ] => t = 1/rate... 1024 samples/frame (in kHz)
 let _Rates = [96000, 88200, 64000, 48000, 44100, 32000, 24000, 22050, 16000, 12000, 11025, 8000, 7350, 48000, 48000 ];
 

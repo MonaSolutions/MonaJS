@@ -1,12 +1,22 @@
-/**
- * SDP.js contains util functions for SDP building or parsing
- */
+/* 
+This file is a part of MonaSolutions Copyright 2019
+mathieu.poux[a]gmail.com
+jammetthomas[a]gmail.com
+
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+
+*/
 
 import "./String.js";
 import "./Array.js";
 import { Util } from "./Util.js";
 import { BinaryReader } from "./BinaryReader.js";
 
+/**
+ * SDP.js contains util functions for SDP building or parsing
+ */
 export let SDP = {
 
 	TYPE_OFFER: "offer",

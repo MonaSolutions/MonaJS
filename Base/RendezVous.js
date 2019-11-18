@@ -1,9 +1,19 @@
+/* 
+This file is a part of MonaSolutions Copyright 2019
+mathieu.poux[a]gmail.com
+jammetthomas[a]gmail.com
+
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+
+*/
+
 /**
  * Connect to the HTTP Rendezvous url and send a message to far peer
  * @param {string} url 
  * @param {string} message 
  */
-
 export class RendezVous {
 	constructor() {
 		this._request =  null;

@@ -1,2 +1,2 @@
 # MonaJS
-Code client javascript of base for MonaServer
+MonaServer JS clients framework
